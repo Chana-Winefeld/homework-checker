@@ -1,5 +1,11 @@
 # 📚 Homework Checker System
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
 ## 🚀 Overview
 A smart Python automation tool designed to help teachers automatically verify Java homework submissions across multiple student directories and generate a structured Excel report.
 
@@ -8,7 +14,7 @@ This system eliminates manual checking and significantly improves grading effici
 ---
 
 ## 🎯 Problem It Solves
-Teachers often waste time manually searching for student submissions across folders.
+Teachers often waste time manually searching for student submissions across multiple folders.
 
 This tool automates the entire process:
 - Navigates through all student directories
@@ -18,15 +24,20 @@ This tool automates the entire process:
 ---
 
 ## ⚙️ How It Works
-1. Teacher enters the exercise name to check
-2. The system scans all student folders
+1. Teacher enters the exercise name to check  
+2. The system scans all student folders  
 3. For each student:
-   - Searches for a `.java` file matching the exercise name
-4. Generates an Excel file with results:
-   - ✔ File exists
-   - ✖ File missing
+   - Searches for a `.java` file matching the exercise name  
+4. Generates an Excel report:
+   - ✔ File exists  
+   - ✖ File missing  
 
-The Excel file is updated each run (no duplicates, always refreshed).
+The Excel file is automatically updated each run (no duplicates, always refreshed).
+
+---
+
+## 🔄 System Flow
+Teacher Input → Folder Scanner → File Validator → Result Generator → Excel Output
 
 ---
 
@@ -37,58 +48,77 @@ homework-checker/
 ├── src/ # Core logic modules
 ├── requirements.txt # Dependencies
 ├── .gitignore
-└── README.md
+├── README.md
+└── excel-output.png # Output screenshot
+
+---
+
+## 📸 Output Screenshot
+
+![Excel Output](excel-output.png)
+
+The Excel report is automatically generated and updated after each run, ensuring clean and up-to-date results without duplication.
 
 ---
 
 ## 📊 Output Example
-
 | Student Name | Exercise_1 |
-|-------------|------------|
-| David       | ✔          |
-| Sarah       | ✖          |
-| Noa         | ✔          |
+| ------------ | ---------- |
+| David        | ✔          |
+| Sarah        | ✖          |
+| Noa          | ✔          |
 
 ---
 
 ## 🛠️ Technologies Used
-- Python 🐍
-- os / pathlib (file system traversal)
-- Excel automation (openpyxl / pandas)
-- Data handling & automation logic
+- Python 🐍  
+- os / pathlib (file system traversal)  
+- Excel automation (openpyxl / pandas)  
+- Data processing & automation logic  
 
 ---
 
 ## 💡 Key Features
-- 🔍 Automatic directory scanning
-- 📂 Multi-student support
-- ☕ Java file validation
-- 📊 Excel report generation
-- 🔄 Overwrites previous results cleanly
-- ⚡ Fast and scalable
+- 🔍 Automatic directory scanning  
+- 📂 Multi-student support  
+- ☕ Java file validation  
+- 📊 Excel report generation  
+- 🔄 Clean overwrite of previous results  
+- ⚡ Fast and scalable automation  
 
 ---
 
 ## 🔮 Future Improvements
-- GUI interface for teachers
-- Support for multiple programming languages
-- Web-based dashboard
-- Cloud storage integration
-- Automatic submission upload system
+- Graphical User Interface (GUI) for teachers  
+- Multi-language assignment support (Java, Python, C#)  
+- Web dashboard for centralized grading  
+- Cloud storage integration  
+- Automated submission upload system  
+
+---
+
+## ⭐ About This Project
+This project was built as a real-world automation tool to reduce manual workload for teachers and improve grading efficiency.
+
+It demonstrates practical skills in:
+- File system automation  
+- Data processing pipelines  
+- Real-world Python application design  
+- Structured reporting using Excel  
 
 ---
 
 ## 👩‍💻 Author
 Developed by **Chana Winfeld**  
-Software Engineering Student | Full Stack Developer
+Software Engineering Student | Full Stack Developer  
 
 ---
 
 ## ⭐ Why This Project Matters
-This project demonstrates:
-- File system automation
-- Real-world problem solving
-- Data processing pipelines
-- Clean software architecture thinking
+This project shows:
+- Strong problem-solving ability  
+- Real-world automation thinking  
+- Clean and scalable code structure  
+- Practical engineering mindset  
 
-Perfect for academic and professional portfolio.
+Perfect for academic and professional portfolio 🚀
